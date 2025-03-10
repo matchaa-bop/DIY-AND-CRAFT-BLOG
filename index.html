@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Crafty Creations Blog</title>
+  <title>HandiCraft</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -25,15 +25,9 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
+   <link href="style.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: iLanding
-  * Template URL: https://bootstrapmade.com/ilanding-bootstrap-landing-page-template/
-  * Updated: Nov 12 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="index-page">
@@ -42,9 +36,7 @@
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Crafty Creations</h1>
+        <h1 class="sitename">HandiCraft</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -55,26 +47,16 @@
           <li><a href="#services">DIY Projects</a></li>
           <li><a href="#pricing">Pricing</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li class="d-lg-none"><a href="login.php" class="text-danger">Logout</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="index.html#about">Get Started</a>
-      <a class ="btn-profile text-decoration-none" href = "login.php">Logout</a>
-
-      <style>
-       .btn-profile {
-        background-color: #007bff;
-        color: #fff;
-        padding: 7px 20px;
-        border-radius: 50px;
-        transition: background-color 0.3s;
-       }
-       .btn-profile:hover {
-        background-color: #fff;
-       }
-      </style>
-
+      <!-- Get Started & Logout Together -->
+      <div class="header-buttons d-flex align-items-center">
+        <a class="btn-getstarted text-decoration-none" href="index.html#about">Get Started</a>
+        <a class="btn-profile text-decoration-none d-none d-lg-block" href="login.php">Logout</a>
+      </div>
     </div>
   </header>
 
@@ -89,14 +71,14 @@
           <div class="col-lg-6">
             <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
               <div class="company-badge mb-4">
-                <i class="bi bi-gear-fill me-2"></i>
+                <i class="bi bi-lightbulb-fill me-2"></i>
                 Crafting Your Imagination
               </div>
 
               <h1 class="mb-4">
-                Welcome to<br>
-                Crafty Creations<br>
-                <span class="accent-text">Your DIY & Craft Blog</span>
+                Create with Passion<br>
+                Create with Love<br>
+                <span class="accent-text">Craft you Imaginations</span>
               </h1>
 
               <p class="mb-4 mb-md-5">
@@ -111,7 +93,7 @@
                 <!--Palitan nyo tong link, gawin nyong DIY and vid-->
                 <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="btn btn-link mt-2 mt-sm-0 glightbox">
                   <i class="bi bi-play-circle me-1"></i>
-                  Watch Our Videos
+                  See Tutorials
                 </a>
               </div>
             </div>
@@ -132,8 +114,9 @@
                 </div>
                 <p class="mb-0 mt-2">Join our community of 12,000+ creative minds!</p>
                 <p class="mb-0 mt-2">
-                  Trusted by over <strong>5,000+</strong> satisfied customers worldwide, delivering unique hand
-                  crafted products with love and passion</p>
+                  Recognized as one of the most requested DIY tutorial sites, 
+                  delivering creative ideas, step-by-step guides, and craft inspirations — 
+                  loved by thousands of craft enthusiasts worldwide!</p>
               </div>
             </div>
           </div>
@@ -201,22 +184,23 @@
 
           <div class="col-xl-5" data-aos="fade-up" data-aos-delay="200">
             <span class="about-meta">ABOUT US</span>
-            <h2 class="about-title">Crafting Dreams into Reality</h2>
-            <p class="about-description">At Crafty Creations, we believe that everyone has a creative spark waiting to be ignited. Our mission is to provide you with the tools, tips, and inspiration to bring your DIY projects to life.</p>
-            <h2 class="about-title">Crafty Creations</h2>
 
+            <h2 class="about-title">HandiCraft</h2>
             <p class="about-description">
-              At <Strong>Crafty Creations</Strong>, we are passionate about turning creativity into reality.
-              Our platform is dedicated to showcasing and promoting amazing DIY (Do-It-Yourself) and craft Projects
-              made by talented individuals. Whether it's home decor, handmade accessories, personalized gifts, or creative
-              upcycling ideas - we celebrate the beauty of handcrafted work.
-            </p>
-            
-            <p class = "about-description">
-              We believe that <strong>every piece tells a story</strong>, and our mission is to inspire and connect people throught the art
-              of crafting. Join us in discovering new ideas, sharing your own creations, and embracing the joy of making 
-              something with your own hands.
-            </p>
+             We are driven by a passion for turning creativity into reality. 
+              Our platform is dedicated to showcasing and promoting incredible DIY 
+              (Do-It-Yourself) and craft projects made by talented creators. From home decor, 
+              handmade accessories, personalized gifts, to upcycling ideas — we celebrate the 
+              art of handcrafted work.<br><br>
+              We believe that every craft tells a unique story, and our mission is to inspire, 
+              connect, and empower individuals through the joy of making. Whether you're an 
+              experienced crafter or just starting your DIY journey, HandiCraft is here to 
+              provide ideas, tutorials, and inspiration to bring your creative visions to life.<br><br>
+              Join our growing community of craft enthusiasts, share your creations,
+              explore new ideas, and discover the endless possibilities of handmade 
+              craftsmanship. Together, let's turn imagination into reality — one craft
+               at a time
+            </p>      
 
             <div class="row feature-list-wrapper">
               <div class="col-md-6">
@@ -245,7 +229,7 @@
               <div class="row gy-4">
                 <div class="col-lg-5">
                   <div class="profile d-flex align-items-center gap-3">
-                    <img src="Images (New)/mark.jpg" alt="CEO Profile" class="profile-image">
+                    <img src="New Image/mark.jpg" alt="CEO Profile" class="profile-image">
                     <div>
                       <h4 class="profile-name">Mark Bongalbal</h4>
                       <p class="profile-position">CEO &amp; Founder</p>
@@ -272,7 +256,7 @@
                 <img src="assets/img/about-2.webp" alt="Team Discussion" class="img-fluid small-image rounded-4"><!--Palitan nyo tong pang DIY na background-->
               </div>
               <div class="experience-badge floating">
-                <h3>10+ <span>Years</span></h3>
+                <h3>10 <span>Years</span></h3>
                 <p>Of experience in crafting and DIY projects</p>
               </div>
             </div>
@@ -852,8 +836,8 @@
             <div class="pricing-card">
               <h3>Basic Plan</h3>
               <div class="price">
-                <span class="currency">$</span>
-                <span class="amount">9.9</span>
+                <span class="currency">₱</span>
+                <span class="amount">999.50</span>
                 <span class="period">/ month</span>
               </div>
               <p class="description">Access to basic tutorials and community support.</p>
@@ -887,8 +871,8 @@
               <div class="popular-badge">Most Popular</div>
               <h3>Standard Plan</h3>
               <div class="price">
-                <span class="currency">$</span>
-                <span class="amount">19.9</span>
+                <span class="currency">₱</span>
+                <span class="amount">1499.75</span>
                 <span class="period">/ month</span>
               </div>
               <p class="description">Includes everything in the Basic Plan plus additional resources.</p>
@@ -925,8 +909,8 @@
             <div class="pricing-card">
               <h3>Premium Plan</h3>
               <div class="price">
-                <span class="currency">$</span>
-                <span class="amount">39.9</span>
+                <span class="currency">₱</span>
+                <span class="amount">2,499.50</span>
                 <span class="period">/ month</span>
               </div>
               <p class="description">All-inclusive access to all resources and personal consultations.</p>
@@ -1178,11 +1162,11 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">DIY Projects</a></li>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#services">DIY Projects</a></li>
             <li><a href="#">Crafting Tips</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
 

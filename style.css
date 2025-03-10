@@ -1,0 +1,51 @@
+
+.btn-getstarted {
+  background-color: #007bff;
+  color: #fff;
+  padding: 7px 20px;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.btn-getstarted:hover {
+  background-color: #fff;
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+.btn-profile {
+  background-color: #007bff;
+  color: #fff;
+  padding: 7px 20px;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.btn-profile:hover {
+  background-color: #dc3545;
+  color: #fff;
+  border: 1px solid;
+}
+
+/* Space them together */
+.header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Responsive: Move Logout inside the navmenu */
+@media (max-width: 992px) {
+  .btn-profile {
+    display: none;
+  }
+}
+
+/* Keep Get Started outside the navigation */
+@media (max-width: 992px) {
+  .btn-getstarted {
+    display: block;
+  }
+}
