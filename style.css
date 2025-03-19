@@ -49,3 +49,24 @@
     display: block;
   }
 }
+
+.carousel-img {
+  width: 100%;
+  height: auto;
+  max-height: 400px; /* Set a maximum height */
+  object-fit: cover;  /* Ensures the image covers the container while maintaining aspect ratio */
+}
+
+.carousel-item {
+  transition: transform 0.5s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#heroCarousel {
+  transition: transform 1s ease-in-out;
+}
+
+.carousel-img:hover {
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.05);
+}

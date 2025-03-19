@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+body {
+  background: #E0F7FA; /* Soft light blue */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-control {
+  border-radius: 30px;
+  padding: 15px;
+  padding-left: 50px; /* Adjusted padding to fit the icon */
+  margin-bottom: 20px;
+}
+
+.buttons {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.blob-btn {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  padding: 5px 50px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #00000a;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #FFFFFF; /* Background to make it more visible */
+  outline: none;
+  border: 2px solid #0d83fd;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Added smooth transition */
+}
+
+.blob-btn:before, .blob-btn:after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  transition: all 0.3s;
+}
+
+.blob-btn:after {
+  z-index: -2;
+  left: 10px;
+  top: 10px;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+}
+
+.blob-btn:hover {
+  background-color: #0d83fd;
+  color: #FFFFFF; /* White text on hover */
+}
+
+.blob-btn:hover:after {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0d83fd; /* Solid background color on hover */
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #333;
+}
+
+.form-text {
+  text-align: center;
+  color: #999;
+}
+
+.material-icons {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #333;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 15px;
+  display: none; /* Hidden by default */
+}
+
+</style>
+
+</head>
+<body>
+
+  <div class="login-box">
+    <h2>Login</h2>
+    <form onsubmit="return validateForm()">
+      <div class="form-group">
+        <i class="material-icons">email</i> <!-- Email Icon -->
+        <input type="email" class="form-control" id="email" placeholder="Email address">
+      </div>
+      <div class="form-group">
+        <i class="material-icons">lock</i> <!-- Lock Icon -->
+        <input type="password" class="form-control" id="password" placeholder="Password">
+      </div>
+      <button type="submit" class="blob-btn">Login</button>
+      <small class="form-text">We'll never share your email with anyone else.</small>
+      <div class="error-message" id="error-message">Invalid email or password.</div>
+    </form>
+  </div>
+
+  <script>
+    function validateForm() {
+      const hardcodedEmail = "bsit5@email.com";
+      const hardcodedPassword = "password123";
+      
+      const emailInput = document.getElementById('email').value;
+      const passwordInput = document.getElementById('password').value;
+      const errorMessage = document.getElementById('error-message');
+      
+      if (emailInput === hardcodedEmail && passwordInput === hardcodedPassword) {
+        errorMessage.style.display = "none"; // Hide error message
+        window.location.href = 'index.html'; // Redirect to index.html on successful login
+        return false;
+      } else {
+        errorMessage.style.display = "block"; // Show error message
+        return false; // Prevent form submission
+      }
+    }
+  </script>
+</body>
+</html>
